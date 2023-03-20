@@ -22,6 +22,9 @@ main {
   
   display: grid;
   place-content: center;
+
+  padding: 6.4rem;
+  gap: 2.4rem;
 }
 
 section {
@@ -32,11 +35,8 @@ section {
 
 .temperature-now {
   background: url(../assets/bg-temp-now.jpeg);
-
-  width: 48rem;
-  height: 48rem;
-
   position: relative;
+  
   display: grid;
   grid-template-rows: max-content 1fr max-content;
 }
@@ -143,8 +143,92 @@ section {
 }
 
 /*  Air Quality */
-.air-quality {}
+.air-quality {
+  font-weight: 700;
+
+  text-align: center;
+  display: grid;
+}
 
 h2.title {
+  font-size: 1.6rem;
   color: #DAD8F7;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .8rem;
+
+  margin-top: 3.2rem;
+}
+
+.air-quality .good {
+  margin-top: 3.2rem;
+
+  font-size: 1.8rem;
+  color: #87EBCD
+}
+
+.air-quality > .number {
+  margin-top: .4rem;
+  font-size: 4rem;
+  color: #e7e6fb;
+}
+
+.air-quality .info {
+  display: flex;
+  align-items: center;
+
+  margin-top: 3.2rem;
+  padding: 0 1.6rem 1.6rem;
+}
+
+.air-quality .info .number {
+  flex: 1;
+}
+
+.air-quality .info p {
+  color: #87EBCD;
+  font-size: 1.4rem;
+}
+
+.air-quality .info small {
+  font-size: 1.2rem;
+  color: #E7E6FB;
+}
+
+/*  Sun Time */
+.sun-chart-wrapper {
+  margin-top: 4rem;
+  height: 11rem;
+}
+
+.sun-chart {
+  --pos-x: 50;
+  margin: auto;
+
+  width: 21.6rem;
+  height: 21.6rem;
+
+  position: relative;
+}
+
+.sun-chart::before {
+  content: '';
+  width: 1.2rem;
+  height: 1.2rem;
+  position: absolute;
+  background: #F6C833;
+  border-radius: 50%;
+
+  top: 50%;
+  left: 50%;
+  margin: -0.6rem;
+
+  transform: rotate(calc(1deg * (((100 - var(--pos-x)) / -100) * 180))) translate(10.6rem);
+}
+
+.char::before {
+  content: '';
+  
 }
