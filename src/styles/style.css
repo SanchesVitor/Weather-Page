@@ -298,3 +298,18 @@ time.now {
   justify-items: center;
   gap: 1.6rem;
 }
+
+h4.title {
+  font-size: 1.4rem;
+  color: #DAD8F7;
+}
+
+.day .maxmin {
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 1.6rem;
+}
+
+.day .maxmin span {
+  color: #c2bff4;
+}
