@@ -32,7 +32,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O Wather-Page é uma página de clima, com layout proposto pela Rocketseat, através do desafio #10 #boraCodar .
 
-- [Visite o projeto online](https://sanchesvitor.github.io/Habits-Me/)
+- [Visite o projeto online](https://sanchesvitor.github.io/Weather-Page/)
 
 
 ## 🔖 Layout
